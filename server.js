@@ -26,6 +26,9 @@ app.get('/res', (req, res) => {
     //res.send('Hoi sinh')
     res.render('sample.ejs')
 })
+app.get('/tintuc', (req, res) => {
+    res.render('tintuc.ejs')
+})
 
 app.listen(port, hostname, () => {
     console.log(`Example app listening on port ${port}`)
